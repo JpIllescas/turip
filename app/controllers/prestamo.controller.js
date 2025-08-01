@@ -3,7 +3,7 @@ const Prestamo = db.prestamos;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
-    if (!req.body.nombre) {
+    if (!req.body.id_libro) {
         res.status(400).send({
             message: "Content can not be empty!"
         });
