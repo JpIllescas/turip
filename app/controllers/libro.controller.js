@@ -3,7 +3,7 @@ const Libro = db.libros;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
-    if (!req.body.nombre) {
+    if (!req.body.titulo) {
         res.status(400).send({
             message: "Content can not be empty!"
         });
